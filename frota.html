@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width" , initial-scale="1.0">
+    <title> VOM - Frota - efB LSSW</title>
+    <link rel="stylesheet" href="style.css">
+    <!--Tirado de Googlefonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Radio+Canada:wght@300;500;600&display=swap" rel="stylesheet">
+    <!--Tirado de FontAwesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+
+<body>
+    <section class="frota-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-xmark" onclick="menuHide()"></i>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="percursos.html">Percursos</a></li>
+                    <li><a href="equipa.html">Equipa</a></li>
+                    <li><a href="frota.html">Frota</a></li>
+                    <li><a href="contacto.html">Contactos</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="menuShow()"></i>
+        </nav>
+        <h1>A nossa frota</h1>
+    </section>
+
+    <section class="frota">
+        <div id="anchor-milleniumfalcon" class="row">
+            <div class="frota-col">
+                <img src="images/milleniumfalcon.jpg" alt="">
+                <div>
+                    <h1>Millenium Falcon</h3>
+                        <h3>Corellian YT-1300f light freighter</h3>
+                        <p><b>Capacidade:</b> 30 passageiros<br>
+                            <b>Tripulação:</b> 4<br>
+                            <b>Comprimento:</b> 34.75m<br>
+                            <b>Alcance:</b> Médio<br>
+                            <b>FTL:</b> Sim<br>
+                            <b>Outros:</b> Anexo com vista panorâmica<br>
+                        </p>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="anchor-discoveryone" class="row">
+            <div class="frota-col">
+                <img src="images/discoveryone.jpg" alt="">
+                <div>
+                    <h1>Discovery One</h3>
+                        <h3>XD-1 Discovery</h3>
+                        <p><b>Capacidade:</b> 4 passageiros<br>
+                            <b>Tripulação:</b> 2<br>
+                            <b>Comprimento:</b> 140.1m<br>
+                            <b>Alcance:</b> Longo<br>
+                            <b>FTL:</b> Não<br>
+                            <b>Outros:</b> IA integrada não maléfica<br>
+                        </p>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="anchor-serenity" class="row">
+            <div class="frota-col">
+                <img src="images/serenity.jpg" alt="">
+                <div>
+                    <h1>Serenity</h3>
+                        <h3>03-K64-Firefly</h3>
+                        <p><b>Capacidade:</b> 18 passageiros<br>
+                            <b>Tripulação:</b> 5<br>
+                            <b>Comprimento:</b> 82.1m<br>
+                            <b>Alcance:</b> Curto<br>
+                            <b>FTL:</b> Não<br>
+                            <b>Outros:</b> Expedições repetidas não permitidas<br>
+                        </p>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="anchor-tardis" class="row">
+            <div class="frota-col">
+                <img src="images/tardis.jpg" alt="">
+                <div>
+                    <h1>Tardis</h3>
+                        <h3>Police Box</h3>
+                        <p><b>Capacidade:</b> ∞ passageiros<br>
+                            <b>Tripulação:</b> 1<br>
+                            <b>Comprimento:</b> 1.53m<br>
+                            <b>Alcance:</b> ∞<br>
+                            <b>FTL:</b> Sim<br>
+                            <b>Outros:</b> Funcionalidade temporal desativada<br>
+                        </p>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="anchor-eagle5" class="row">
+            <div class="frota-col">
+                <img src="images/eagle5.png" alt="">
+                <div>
+                    <h1>Eagle 5</h3>
+                        <h3>1986 Winnebago Chieftain 33</h3>
+                        <p><b>Capacidade:</b> 4 total<br>
+                            <b>Tripulação:</b> -<br>
+                            <b>Comprimento:</b> 10.36m<br>
+                            <b>Alcance:</b> Curto<br>
+                            <b>FTL:</b> Não<br>
+                            <b>Outros:</b> Disponível para aluguer sem tripulação<br>
+                        </p>
+                </div>
+
+            </div>
+        </div>
+        <p><br><br></p>
+    </section>
+
+    <!--seccao final com contactos-->
+    <section class="footer">
+        <h1>Contacte-nos</h1>
+        <div class="icons">
+            <a href="https://www.facebook.com/" class="fa-brands fa-facebook-f"></a>
+            <a href="https://www.instagram.com/" class="fa-brands fa-instagram"></a>
+            <a href="https://www.twitter.com/" class="fa-brands fa-twitter"></a>
+        </div>
+        <p><br>Website elaborado no contexto de e-fólioB para a Unidade Curricular Laboratório de Sistemas e Serviços
+            Web<br>Pedro Ferreira, 1900877<br>Maio 2022</p>
+    </section>
+
+    <!-----JavaScript for menu toggle----->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function menuShow() {
+            navLinks.style.right = "-30px";
+        }
+
+        function menuHide() {
+            navLinks.style.right = "-250px";
+        }
+    </script>
+</body>
+
+</html>
+
+
+<!-------------------------------------------------------------------------
+
+<b> para por a negrito certas palavras
+
+
+-->

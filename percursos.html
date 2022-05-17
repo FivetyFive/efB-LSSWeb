@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width" , initial-scale="1.0">
+    <title> VOM - Percursos - efB LSSW</title>
+    <link rel="stylesheet" href="style.css">
+    <!--Tirado de Googlefonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Radio+Canada:wght@300;500;600&display=swap" rel="stylesheet">
+    <!--Tirado de FontAwesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+
+<body>
+    <section class="percursos-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-xmark" onclick="menuHide()"></i>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="percursos.html">Percursos</a></li>
+                    <li><a href="equipa.html">Equipa</a></li>
+                    <li><a href="frota.html">Frota</a></li>
+                    <li><a href="contacto.html">Contactos</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="menuShow()"></i>
+        </nav>
+        <h1>Os nossos percursos</h1>
+    </section>
+
+    <section class="percursos">
+        <div id="anchor-starwars" class="row">
+            <div class="percursos-col">
+                <img src="images/tatooine.jpg" alt="">
+                <div>
+                    <h1>Guerra das Estrelas</h3>
+                        <h3>Kepler-16b</h3>
+                        <p>Visite o planeta verdadeiro com duas estrelas.
+                            <br><br>
+                            Este percurso leva todos os rebeldes e imperiais numa viagem pelas estrelas, passando por
+                            várias atrações temáticas, incluindo uma Estrela da Morte em escala real! A rota culmina na
+                            visita a uma vila tradicional Tatooiana em Kepler-16b.<br><br>
+                            <b>Preço:</b> A partir de 3 236 000 €$ /pessoa
+                        </p>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="anchor-palebluedot" class="row">
+            <div class="percursos-col">
+                <img src="images/palebluedot.jpg" alt="">
+                <div>
+                    <h1>Pale Blue Dot</h3>
+                        <h3><i>A vision of the human future in space</i></h3>
+                        <p>Siga nas pegadas da sonda da Nasa Voyager 1.
+                            <br><br>
+                            Este percurso permiti-lo-a tirar uma selfie no local exato onde a icónica imagem do nosso
+                            planeta foi capturada. Toda a viagem será acompanhada e narrada por um clone biológico do
+                            ilustre Carl Sagan.<br><br>
+                            <b>Preço:</b> A partir de 416 000 €$ /pessoa
+                        </p>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="anchor-spacex" class="row">
+            <div class="percursos-col">
+                <img src="images/spacex.jpg" alt="">
+                <div>
+                    <h1>SpaceX</h3>
+                        <h3><i>Patrocinado por SpaceX</i></h3>
+                        <p>Faça parte da vanguarda da humanidade na conquista de outros planetas.
+                            <br><br>
+                            Nesta viagem só de ida, siga nos passos do mestre Musk. Após uma curta paragem na Lua, será
+                            enviado para Marte, onde poderá trabalhar o resto da sua vida para pagar o preço de
+                            deslocação, tudo sem os constrangimentos de leis de trabalho e direitos humanos
+                            internacionais Terrestres.<br><br>
+                            <b>Preço:</b> A partir de 0 €$ /pessoa
+                        </p>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div id="anchor-sistemasolar" class="row">
+            <div class="percursos-col">
+                <img src="images/sistemasolar.jpg" alt="">
+                <div>
+                    <h1>Sistema Solar</h3>
+                        <h3><i>Inclui Plutão</i></h3>
+                        <p>Veja de perto todos os planetas do nosso sistema.
+                            <br><br>
+                            Os anéis de Saturno, as luas de Júpiter, e o coração de Plutão, este percurso ideal para
+                            famílias explora todos os detalhes do nosso sistema. <br><br>Quem sabe, poderá ainda ver um
+                            cometa em visita, ou os corpos celestes centaurianos em rotas excentricas.<br><br>
+                            <b>Preço:</b> A partir de 248 000 €$ /pessoa
+                        </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!--seccao final com contactos-->
+    <section class="footer">
+        <h1>Contacte-nos</h1>
+        <div class="icons">
+            <a href="https://www.facebook.com/" class="fa-brands fa-facebook-f"></a>
+            <a href="https://www.instagram.com/" class="fa-brands fa-instagram"></a>
+            <a href="https://www.twitter.com/" class="fa-brands fa-twitter"></a>
+        </div>
+        <p><br>Website elaborado no contexto de e-fólioB para a Unidade Curricular Laboratório de Sistemas e Serviços
+            Web<br>Pedro Ferreira, 1900877<br>Maio 2022</p>
+    </section>
+
+    <!-----JavaScript for menu toggle----->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function menuShow() {
+            navLinks.style.right = "-30px";
+        }
+
+        function menuHide() {
+            navLinks.style.right = "-220px";
+        }
+    </script>
+</body>
+
+</html>

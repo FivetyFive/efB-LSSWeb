@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width" , initial-scale="1.0">
+    <title> VOM - Contactos - efB LSSW</title>
+    <link rel="stylesheet" href="style.css">
+    <!--Tirado de Googlefonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Radio+Canada:wght@300;500;600&display=swap" rel="stylesheet">
+    <!--Tirado de FontAwesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+
+<body>
+    <section class="contacto-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-xmark" onclick="menuHide()"></i>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="percursos.html">Percursos</a></li>
+                    <li><a href="equipa.html">Equipa</a></li>
+                    <li><a href="frota.html">Frota</a></li>
+                    <li><a href="contacto.html">Contactos</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="menuShow()"></i>
+        </nav>
+        <h1>Contactos</h1>
+    </section>
+
+    <section class="location">
+        <!--Tirado de Google Maps-->
+        <div class="row">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10721.49915002946!2d-25.164742046189055!3d36.973500799372715!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6f600d500febac71!2sSanta%20Maria%20Airport!5e0!3m2!1sen!2sch!4v1652793470871!5m2!1sen!2sch"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="contacto-col">
+                <div>
+                    <!--Tirado de FontAwesome-->
+                    <i class="fa-solid fa-house"></i>
+                    <span>
+                        <h5>Centro de lançamento ESA, Aeroporto de Santa Maria</h5>
+                        <p>XRCP+R2 Vila Do Porto, Portugal</p>
+                    </span>
+                </div>
+                <div>
+                    <!--Tirado de FontAwesome-->
+                    <i class="fa-regular fa-envelope"></i>
+                    <span>
+                        <h5>info@vom.pt</h5>
+                        <p>Envie-nos um email com qualquer pergunta</p>
+                    </span>
+
+
+                </div>
+                <div>
+                    <!--Tirado de FontAwesome-->
+                    <i class="fa-solid fa-phone"></i>
+                    <span>
+                        <h5>+01 234 567 890</h5>
+                        <p>Segunda a Sexta 9-17h</p>
+                    </span>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--seccao final com contactos-->
+    <section class="footer">
+        <h1>Contacte-nos</h1>
+        <div class="icons">
+            <!--Tirado de FontAwesome-->
+            <a href="https://www.facebook.com/" class="fa-brands fa-facebook-f"></a>
+            <a href="https://www.instagram.com/" class="fa-brands fa-instagram"></a>
+            <a href="https://www.twitter.com/" class="fa-brands fa-twitter"></a>
+        </div>
+        <p><br>Website elaborado no contexto de e-fólioB para a Unidade Curricular Laboratório de Sistemas e Serviços
+            Web<br>Pedro Ferreira, 1900877<br>Maio 2022</p>
+    </section>
+
+    <!-----JavaScript for menu toggle----->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function menuShow() {
+            navLinks.style.right = "-30px";
+        }
+
+        function menuHide() {
+            navLinks.style.right = "-220px";
+        }
+    </script>
+</body>
+
+</html>
+
+
+
+<!-------------------------------------------------------------------------
+
+<span> para inttroduzir uma subdivisão
+
+
+-->

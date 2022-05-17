@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width" , initial-scale="1.0">
+    <title> VOM - Viagens de Outro Mundo - efB LSSW</title>
+    <link rel="stylesheet" href="style.css">
+    <!--Tirado de Googlefonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Radio+Canada:wght@300;500;600&display=swap" rel="stylesheet">
+    <!--Tirado de FontAwesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-xmark" onclick="menuHide()"></i>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="percursos.html">Percursos</a></li>
+                    <li><a href="equipa.html">Equipa</a></li>
+                    <li><a href="frota.html">Frota</a></li>
+                    <li><a href="contacto.html">Contactos</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="menuShow()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>A sua próxima odisseia interplanetária começa aqui</h1>
+            <p><br>Conheça de perto todos os cantos da nossa galáxia, desde os planetas vizinhos até aos sistemas mais
+                distantes</p>
+
+        </div>
+    </section>
+
+    <!--seccao com preview de alguns percursos-->
+    <section class="percursos-home">
+        <h1>Os nossos percursos mais procurados</h1>
+        <div class="row">
+            <a href="percursos.html#anchor-palebluedot" class="percursos-home-col">
+                <h3>Pale Blue Dot</h3>
+                <img src="images/palebluedot.jpg">
+                <p>Para fãs de Carl Sagan</i></p>
+            </a>
+            <a href="percursos.html#anchor-starwars" class="percursos-home-col">
+                <h3>Guerra das Estrelas</h3>
+                <img src="images/tatooine.jpg">
+                <p>Para os rebeldes</p>
+            </a>
+            <a href="percursos.html#anchor-sistemasolar" class="percursos-home-col">
+                <h3>Sistema Solar</h3>
+                <img src="images/sistemasolar.jpg">
+                <p>Para quem gosta de conhecer os vizinhos</p>
+            </a>
+        </div>
+
+    </section>
+
+
+    <!--seccao com preview de algumas naves-->
+    <section class="frota-home">
+        <h1>As naves mais populares</h1>
+        <div class="row">
+            <a href="frota.html#anchor-milleniumfalcon" class="frota-home-col">
+                <h3>Millenium Falcon</h3>
+                <img src="images/milleniumfalcon.jpg">
+                <p><i>Kessel Run</i> em menos de 12 parsecs</p>
+            </a>
+            <a href="frota.html#anchor-serenity" class="frota-home-col">
+                <h3>Serenity</h3>
+                <img src="images/serenity.jpg">
+                <p>Conforto familiar</p>
+            </a>
+            <a href="frota.html#anchor-tardis" class="frota-home-col">
+                <h3>Tardis</h3>
+                <img src="images/tardis.jpg">
+                <p>Maior por dentro</p>
+            </a>
+        </div>
+
+    </section>
+
+
+    <!--seccao com testemunhos-->
+    <section class="testemunhos">
+        <h1>Clientes satisfeitos</h1>
+        <div class="row">
+            <div class="testemunho-col">
+                <img src="images/user1.png" alt="">
+                <div>
+                    <p>Melhor do que alguma vez poderia imaginar, toda a tripulação foi excelente e o sono criogénico
+                        passou num instante!</p>
+                    <h3>Miguel Antunes</h3>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa-regular fa-star-half-stroke"></i>
+                </div>
+            </div>
+            <div class="testemunho-col">
+                <img src="images/user2.png" alt="">
+                <div>
+                    <p>Levei os meus filhos a visitar os lugares icónicos da minha infância, é importante partilhar as
+                        nossas paixões!<br>A nutrição instantânea podia ser melhor...</p>
+                    <h3>Joana Silva</h3>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <!--seccao final com contactos-->
+    <section class="footer">
+        <h1>Contacte-nos</h1>
+        <div class="icons">
+            <a href="https://www.facebook.com/" class="fa-brands fa-facebook-f"></a>
+            <a href="https://www.instagram.com/" class="fa-brands fa-instagram"></a>
+            <a href="https://www.twitter.com/" class="fa-brands fa-twitter"></a>
+        </div>
+        <p><br>Website elaborado no contexto de e-fólioB para a Unidade Curricular Laboratório de Sistemas e Serviços
+            Web<br>Pedro Ferreira, 1900877<br>Maio 2022</p>
+    </section>
+
+
+    <!-----JavaScript for menu toggle----->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function menuShow() {
+            navLinks.style.right = "-30px";
+        }
+
+        function menuHide() {
+            navLinks.style.right = "-220px";
+        }
+    </script>
+</body>
+
+</html>
+
+
+
+
+
+<!-------------------------------------------------------------------------
+
+<DOCTYPE> para que o browser identifiquea versão de HTML utilizada neste ficheiro
+<html> para conter todos os elementos da página
+<head> para conter elementos de metadados
+<meta> para definir o tamanho da janela de visualização como uma função do tamanho da janela
+<title> para definir o título da página  
+<link> para establecer ligação a outros ficheiros, onde será encontrada mais informação em relação à formatação e apresentação dos vários elementos da página
+<body> para definir o conteúdo principal da página
+<section> para definir uma nova secção na página
+<nav> para definir uma barra de elementos de navegação
+<a> para definir uma ancora, um elemento com uma hiperligação a outra página ou outro elemento da página
+<img> para introduzir uma imagem
+<div> para definir uma nova divisão dentro de uma secção
+<i> para definir um icone
+<ul> para definir uma lista não ordenada
+<li> para definir um elemento da lista
+<h1> para definir um elemento de texto importante
+<p> para definir um parágrafo
+<br> para introduzir um line-break no texto
+<script> para introduzir uma secção em JavaScript
+
+
+-->

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width" , initial-scale="1.0">
+    <title> VOM - Equipa - efB LSSW</title>
+    <link rel="stylesheet" href="style.css">
+    <!--Tirado de Googlefonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Radio+Canada:wght@300;500;600&display=swap" rel="stylesheet">
+    <!--Tirado de FontAwesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+
+<body>
+    <section class="equipa-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-xmark" onclick="menuHide()"></i>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="percursos.html">Percursos</a></li>
+                    <li><a href="equipa.html">Equipa</a></li>
+                    <li><a href="frota.html">Frota</a></li>
+                    <li><a href="contacto.html">Contactos</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="menuShow()"></i>
+        </nav>
+        <h1>Conheça a nossa equipa</h1>
+    </section>
+
+    <section class="equipa">
+        <div class="row">
+            <div class="equipa-col-l">
+                <img src="images/picard.jpg" alt="">
+                <div>
+                    <h1>Comandante Jean-Luc Picard</h3>
+                        <h3><i>Make it so.</i></h3>
+                        <p>Jean-Luc Picard, conhecido pelas suas conquistas ao comando da USS Enterprise, integra a
+                            nossa equipa de líderes mundiais como Comandante de Frota.<br><br>Nenhum obstáculo
+                            impassável, nenhum destino inalcançável, a sua missão está em boas mãos.<br><br>Creditado
+                            com as maiores honras, decidiu que o próximo desafio digno seria com a VOM.</p>
+                </div>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="equipa-col-r">
+                <div>
+                    <h1>Mestre de Armas Ellen Ripley</h3>
+                        <h3><i>This is Ripley, last survivor of the Nostromo, signing off.</i></h3>
+                        <p>Após uma ínfama viagem a bordo da USCSS Nostromo, e um regresso milagroso, Ellen Ripley
+                            dedicou-se à proteção de outras expedições.<br><br>Naturalmente, sendo a melhor na sua
+                            especialidade, acabou por integrar na equipa da VOM.<br><br>Encarrega-se pessoalmente de
+                            treinar e creditar todos os guardas pessoais a bordo da nossa frota.<br><br>A sua segurança
+                            está em boas mãos.</p>
+                </div>
+                <img src="images/ripley.jpg" alt="">
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="equipa-col-l">
+                <img src="images/c3po.jpg" alt="">
+                <div>
+                    <h1>Representante Interestelar C-3PO</h3>
+                        <h3><i>I am fluent in over six million forms of communication.</i></h3>
+                        <p>Criado com uma única função em mente, este andróide com uma personalidade peculiar é o
+                            pináculo da interação inter-espécie.<br><br>Se a sua expedição der de caras com uma espécie
+                            alienigena, fique descansado que o nosso representante interestelar consegue comunicar com
+                            eles.<br><br>Uma cópia integra viaja a bordo de cada uma das nossas naves, estando a versão
+                            original encarregue de coordenação.</p>
+                </div>
+
+            </div>
+        </div>
+        <p><br><br></p>
+    </section>
+
+    <!--seccao final com contactos-->
+    <section class="footer">
+        <h1>Contacte-nos</h1>
+        <div class="icons">
+            <a href="https://www.facebook.com/" class="fa-brands fa-facebook-f"></a>
+            <a href="https://www.instagram.com/" class="fa-brands fa-instagram"></a>
+            <a href="https://www.twitter.com/" class="fa-brands fa-twitter"></a>
+        </div>
+        <p><br>Website elaborado no contexto de e-fólioB para a Unidade Curricular Laboratório de Sistemas e Serviços
+            Web<br>Pedro Ferreira, 1900877<br>Maio 2022</p>
+    </section>
+
+    <!-----JavaScript for menu toggle----->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function menuShow() {
+            navLinks.style.right = "-30px";
+        }
+
+        function menuHide() {
+            navLinks.style.right = "-220px";
+        }
+    </script>
+</body>
+
+</html>
+
+
+<!-------------------------------------------------------------------------
+
+<i> para italizar certas palavras estrangeiras
+
+
+-->
